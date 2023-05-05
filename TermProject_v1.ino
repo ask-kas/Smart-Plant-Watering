@@ -10,8 +10,8 @@
 // Declaration for enabling Telegram to scan for messages
 const unsigned long BOT_MTBS = 1000; // mean time between scan messages 
 unsigned long bot_lasttime; // last time messages' scan has been done
-const String chat_id = "5579972306"; // chat id to identify the chat
-#define BOT_TOKEN "6248608382:AAEb6pb4DTt00RCe0sc7Xwn8lxRntYIilYQ" //Bot Token to identify bot
+const String chat_id = ""; // insert your chat id
+#define BOT_TOKEN "" //Insert your BOT Token
 
 //Telegram + WiFi security paramteres initialization
 WiFiClientSecure secured_client; //WiFi declaration
@@ -20,8 +20,8 @@ UniversalTelegramBot bot(BOT_TOKEN, secured_client); //Bot declaration
 // Setting up enterprise WiFi, provided by Hasan on Brightspace
 #include "esp_wpa2.h" //wpa2 library for connections to Enterprise networks byte mac[6];
 #define EAP_ANONYMOUS_IDENTITY "vm2260" //Enter your NYU Net ID
-#define EAP_IDENTITY "vm2260" //Enter your NYU Net ID
-#define EAP_PASSWORD "Vaho2002@" //enter the password for NYU Net ID account here in the quotations
+#define EAP_IDENTITY "" //Enter your NYU Net ID
+#define EAP_PASSWORD "" //enter the password for NYU Net ID account here in the quotations
 const char* WIFI_SSID = "nyu"; // Wifi SSID -- Should be set to "nyu" | Alternatively, there's a way to coonect to mobile hotspot too 
 
 //TRIAL FOR RTC
